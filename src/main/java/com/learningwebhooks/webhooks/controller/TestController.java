@@ -10,6 +10,6 @@ public class TestController {
 
     @GetMapping
     public String testController() {
-        return "Hello World";
+        return "Testing Discord Webhook";
     }
 }
