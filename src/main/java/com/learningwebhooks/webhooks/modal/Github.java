@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,14 +24,14 @@ public class Github {
 
     private String compare;
 
-//    private Repository repository;
-//
-//    private Pusher pusher;
-//
-//    private Sender sender;
-//
-//    private Commits commits;
-//
+    private Repository repository;
+
+    private Pusher pusher;
+
+    private Sender sender;
+
+    private List<Commits> commits;
+
     @SerializedName(value = "head_commit")
     private Commits headCommit;
 }
