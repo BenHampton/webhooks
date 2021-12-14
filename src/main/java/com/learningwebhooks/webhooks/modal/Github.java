@@ -1,6 +1,6 @@
 package com.learningwebhooks.webhooks.modal;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -30,6 +30,6 @@ public class Github {
 //
 //    private Commits commits;
 //
-    @JsonProperty(value = "head_commit")
+    @SerializedName(value = "head_commit")
     private Commits headCommit;
 }
